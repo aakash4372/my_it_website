@@ -207,3 +207,8 @@
 .red:hover{
   color: white;
 }
+.location-section{
+  color: black !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
