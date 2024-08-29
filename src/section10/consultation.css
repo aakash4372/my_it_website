@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-one: "Kumbh Sans", sans-serif;
+    --font-two: "Urbanist", sans-serif;
+}
+
+.section_consultation .one div{
+    background-color: #F0EBE3;
+}
+
+.section-consulting{
+    width: 100%;
+    height: auto;
+    background-color: #F3D0D7;
+    padding-bottom: 40px;
+}
+.section-consulting .container{
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+}
+.section-consulting .text-consol{
+  
+    font-family: var(--font-one);
+}
+.section-consulting .text-consol h5{
+    font-size: 24px;
+}
+.section-consulting .text-center{
+    padding-top: 1%;
+}
+.section-consulting .text-center img{
+    border-radius: 50%;
+    box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+}
+
+@media only screen and (max-width:767px){
+    .section-consulting .text-consol{
+        margin-top: 5%;
+    }
+}
+.input-wrapper {
+    position: relative;
+    width: 240px;
+  }
+  
+  .input-box {
+    font-size: 16px;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #272626;
+    color: black;
+    width: 100%;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #08AEEA;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .input-box:focus {
+    border-color: #ffc107;
+    outline: none;
+  }
+  
+  .input-box:focus + .underline {
+    transform: scaleX(1);
+  }
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 9px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #8cd0e4;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+   .section-consulting .text-consol-one{
+    padding-top: 30px;
+   }
+   
+
+
+   
+  
+  

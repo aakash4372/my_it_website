@@ -1,0 +1,14 @@
+.scroll-top-to-bottom{
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+}
+.whatsapp-button{
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    filter: drop-shadow(6px 4px 6px rgb(98, 96, 96));
+}
+.whatsapp-button:hover{
+    transform: scale(1.1); 
+}

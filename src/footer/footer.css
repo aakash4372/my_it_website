@@ -1,0 +1,209 @@
+.footer .container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.footer footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .d-flex a {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.footer .d-flex a:hover {
+  color: #007bff;
+}
+
+
+.icon_wrapper {
+  padding: 40px 0 0 ;
+  margin: 0;
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.icon_wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon_wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon_wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon_wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.icon_wrapper .icon:hover span,
+.icon_wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon_wrapper .facebook:hover,
+.icon_wrapper .facebook:hover .tooltip,
+.icon_wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.icon_wrapper .twitter:hover,
+.icon_wrapper .twitter:hover .tooltip,
+.icon_wrapper .twitter:hover .tooltip::before {
+  background: #060d11;
+  color: #fff;
+}
+
+.icon_wrapper .instagram:hover,
+.icon_wrapper .instagram:hover .tooltip,
+.icon_wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+.icon_wrapper .youtube:hover,
+.icon_wrapper .youtube:hover .tooltip,
+.icon_wrapper .youtube:hover .tooltip::before {
+  background: #d91236;
+  color: #fff;
+}
+.icon_wrapper .linkedin:hover,
+.icon_wrapper .linkedin:hover .tooltip,
+.icon_wrapper .linkedin:hover .tooltip::before {
+  background: #1254d9;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .icon_wrapper .icon{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+.popup-footer .modal-body {
+  overflow: scroll !important;
+}
+
+.green {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid black !important;
+  position: relative;
+  background-color: transparent !important;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+ 
+.green::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(26, 101, 26) !important;
+  color: white;
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+.green:hover::before {
+  transform: translateX(0);
+ }
+.green :hover{
+  color: white;
+}
+
+
+.red {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid black !important;
+  position: relative;
+  background-color: transparent !important;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+ 
+.red::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(109, 18, 18) !important;
+  color: white;
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+.red:hover::before {
+  transform: translateX(0);
+ }
+.red:hover{
+  color: white;
+}

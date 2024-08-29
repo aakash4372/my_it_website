@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section-color{
+    background-color: #fffafa;
+}
+
+.section-color .container .medal{
+    margin-top: 10px;
+}
+.section-color .runner{
+    width: 10%;
+}
+
+.section-color .container .logo{
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgb(231, 220, 252);
+}
+
+.section-color span{
+    font-size: 16px;
+}
+
+.section-color .container .logo-heading-1{
+    background: linear-gradient(to right, #357ffe, #BD081C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    margin-top: 20px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+}
+
+.section-color .container .logo-para-1{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #01050c;
+    font-family: "Kumbh Sans", sans-serif
+;
+}
+
+.section-color .container .icons{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+.section-color .btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(53, 127, 254);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.section-color .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.section-color .btn:hover::before {
+    transform: translateX(0);
+}
+.section-color .btn-type{
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.section-color .container .logo-para-2{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #01050c;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.section-color .slick-prev{
+    display: none !important;
+}
+
+.section-color .slick-next {
+    display: none !important;
+}
+
+.section-color .container .slider-img{
+    max-width: 200px !important;
+}
+
+.section-color .container-3 {
+    color: white;
+    background: linear-gradient(to right, #3b82f6, #9333ea, #ef4444); 
+}
+
+.section-color .heading2{
+    background: linear-gradient(to right, #357ffe, #BD081C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.section-color .para-3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.section-color .para-4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+    margin-top: 20px;
+}
+
+.section-color .card-title{
+    font-size: 34px;
+    
+}
+
+.section-color .card-text{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+}
+
+@media screen and (max-width: 639px) {
+    .section-color .logo {
+        font-size: 13px;
+    }
+    .section-color span{
+        font-size: 12px;
+    }
+    .section-color .container .logo-heading-1{
+        font-size: 25px;
+    }
+    .section-color .logo-para-1{
+        text-align: justify;
+        font-weight: 250;
+        line-height: 20px;
+    }
+
+    .section-color .enquire {
+        margin-bottom: 10px;
+    }
+    .section-color .heading2{
+        font-size: 25px;
+    }
+
+    .section-color .card-title{
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .section-color .card-text{
+        text-align: justify;
+        font-size: 16.8px;
+        font-weight: 400;
+        line-height: 35px;
+        color: #01050c;
+        margin-bottom: 0;
+        
+    }
+}
+
+@media screen and (min-width: 670px) and (max-width: 996px) {
+    .section-color .card-title{
+        font-size: 26px;
+        line-height: 40px;
+    }
+}

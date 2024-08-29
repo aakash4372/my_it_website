@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-one: "Kumbh Sans", sans-serif;
+    --font-two: "Urbanist", sans-serif;
+}
+
+
+.timerpopup{
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
+}
+.headingonepopup{
+    background: linear-gradient(to right, blue, rgb(222, 89, 89));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.spanpopup{
+    font-size: 35px;
+    font-weight: bold;
+}
+.pricepopup{
+    background: linear-gradient(120deg, #0cf5f5 0%, #2ef623 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.linepopup{
+    border: 2px solid #fffefe;
+    opacity: 1;
+    width: 100%;
+}
