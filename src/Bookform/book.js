@@ -1,6 +1,6 @@
 import React from 'react';
-import './book.css';
 import { Modal } from 'react-bootstrap';
+import './book.css'
 import Swal from 'sweetalert2';
 
 const Bookpopup = ({ show, handleClose, title }) => {
@@ -11,9 +11,8 @@ const Bookpopup = ({ show, handleClose, title }) => {
     const email = event.target.email.value.trim();
     const phone = event.target.phone.value.trim();
     const city = event.target.city.value.trim();
-    const state = event.target.State.value.trim();
-    const course = event.target.cars.value.trim();
-
+    const state = event.target.state.value.trim();
+    const course = event.target.course.value.trim();
 
     if (!name || !email || !phone || !city || !state || !course) {
       Swal.fire({
@@ -32,8 +31,8 @@ const Bookpopup = ({ show, handleClose, title }) => {
         timer: 2000
       });
 
-      handleClose(); 
-    }
+      handleClose();
+    } 
   };
 
   return (
@@ -44,27 +43,27 @@ const Bookpopup = ({ show, handleClose, title }) => {
       <Modal.Body>
         <form className="form" onSubmit={handleSubmit}>
           <label htmlFor="name" className="label">Name</label>
-          <input type="text" id="name" name="name" required="" className="input" placeholder='Enter Your Name'/>
+          <input type="text" id="name" name="name" className="input" placeholder='Enter Your Name' required/>
 
           <label htmlFor="email" className="label">Email</label>
-          <input type="email" id="email" name="email" required="" className="input" placeholder='Enter Your Email'/>
+          <input type="email" id="email" name="email" className="input" placeholder='Enter Your Email' required/>
 
           <label htmlFor="phone" className="label">Phone</label>
-          <input type="tel" id="phone" name="phone" required="" className="input"placeholder='Enter Your Phone'/>
+          <input type="tel" id="phone" name="phone" className="input" placeholder='Enter Your Phone' required/>
 
           <label htmlFor="city" className="label">City</label>
-          <input type="text" id="city" name="city" required="" className="input" placeholder='Enter Your city'/>
+          <input type="text" id="city" name="city" className="input" placeholder='Enter Your City' required/>
 
-          <label htmlFor="State" className="label">State</label>
-          <input type="text" id="State" name="State" required="" className="input" placeholder='Enter Your state'/>
+          <label htmlFor="state" className="label">State</label>
+          <input type="text" id="state" name="state" className="input" placeholder='Enter Your State' required/>
 
-          <label htmlFor="Course" className="label">Course</label>
+          <label htmlFor="course" className="label">Course</label>
           <select name="course" id="course" className="input" required>
-            <option value="" selected disabled>Select Course</option>
+            <option value="" disabled>Select Course</option>
             <option value="Full Stack">Full Stack Development</option>
             <option value="Back-end">Python</option>
             <option value="Front-end">Java</option>
-            <option value="Front-end">Software Testing</option>
+            <option value="Software Testing">Software Testing</option>
           </select>
 
           <button type="submit" className="submit">Submit</button>
